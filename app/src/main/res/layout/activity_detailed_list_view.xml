@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detailed_list_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.uddishverma22.hackdtu.DetailedListView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:background="@android:color/white"
+        android:id="@+id/videoView" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@android:color/darker_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="NAME"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/disease"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#3C455C"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="DISEASE : "/>
+
+            <TextView
+                android:id="@+id/disease_name"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#3C455C"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="CANCER"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/ngo_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#3C455C"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="NGO NAME"/>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@android:color/darker_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REQUIRED FOR TREATMENT"
+                android:gravity="center"
+                android:textColor="#3E3E3B"
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_downward_grey_700_36dp"/>
+            <TextView
+                android:id="@+id/treatment_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₹4,00,000"
+                android:textSize="40dp"
+                android:textColor="#6CBF84"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTRIBUTIONS LEFT"
+                android:gravity="center"
+                android:textColor="#3E3E3B"
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_downward_grey_700_36dp"/>
+            <TextView
+                android:id="@+id/money_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₹60,000"
+                android:textSize="40dp"
+                android:textColor="#D73A31"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@android:color/darker_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="MY STORY"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_gravity="center"
+            android:text="Want to link existing Sandbox Account with your developer account? Click Here and provide credentials of your sandbox account."
+            />
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="CONTRIBUTE"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:background="#2B4251"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
