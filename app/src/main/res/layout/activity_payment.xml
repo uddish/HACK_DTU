@@ -5,25 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.uddishverma22.hackdtu.PaymentActivity">
+    tools:context="com.example.uddishverma22.hackdtu.PaymentActivity"
+    android:weightSum="1">
 
-    <TextView
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@android:color/black"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:textSize="30dp"
-        android:text="₹1 - 10"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@android:color/darker_gray"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:text="Sample Quotation"/>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@android:color/darker_gray"-->
+        <!--android:textAppearance="?android:textAppearanceMedium"-->
+        <!--android:text="You're A Hero To Someone, Somewhere, Who Received Your Gracious Gift Of Life."/>-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="209dp"
+        android:src="@drawable/img_one"
+        android:layout_weight="0.28" />
 
     <View
         android:layout_width="match_parent"
@@ -34,7 +33,7 @@
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="4dp"
         android:layout_marginLeft="4dp"
         android:background="@android:color/darker_gray">
@@ -56,7 +55,7 @@
 
 
             <LinearLayout
-                android:layout_margin="30dp"
+                android:layout_margin="10dp"
                 android:padding="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -102,6 +101,16 @@
 
     </android.support.v7.widget.CardView>
 
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="PAY NOW"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="#2567ab"
+        android:textAppearance="?android:textAppearanceMedium"/>
 
 
 </LinearLayout>
