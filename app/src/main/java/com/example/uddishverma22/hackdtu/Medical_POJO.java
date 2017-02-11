@@ -1,12 +1,14 @@
 package com.example.uddishverma22.hackdtu;
 
+import android.support.v7.widget.RecyclerView;
+
 /**
  * Created by uddishverma22 on 11/02/17.
  */
 
 public class Medical_POJO {
 
-    public static class MedicalDetails  {
+    public static class MedicalDetails extends RecyclerView.ViewHolder {
         String name;
         String age;
         String bloodGroup;

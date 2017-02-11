@@ -13,7 +13,7 @@
 
 
     <Button
-        android:id="@+id/browse_fundraisers"
+        android:id="@+id/btn_fund"
         android:text="Browse Fundraisers"
         android:backgroundTint="@android:color/white"
         android:textColor="@color/colorPrimary"
@@ -29,9 +29,9 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
         android:backgroundTint="@android:color/white"
-        android:text="Need Blood"
+        android:text="Blood Donation"
         android:layout_height="70dp"
-        android:layout_above="@+id/browse_fundraisers"
+        android:layout_above="@+id/btn_fund"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
