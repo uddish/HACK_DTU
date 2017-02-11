@@ -30,7 +30,9 @@
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RegisterMedicalID" />
-        <activity android:name=".BloodDonorAdapter"></activity>
+        <activity android:name=".BloodDonorAdapter" />
+        <activity android:name=".FindRegister" />
+        <activity android:name=".FindDonorActivity"></activity>
     </application>
 
 </manifest>

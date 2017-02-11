@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -55,7 +54,7 @@ public class MainActivity extends AppCompatActivity
         bloodDonate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), RegisterMedicalID.class));
+                startActivity(new Intent(getApplicationContext(), FindRegister.class));
             }
         });
 
@@ -112,8 +111,6 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(getApplicationContext(), DetailedListView.class));
         } else if (id == R.id.nav_blood) {
             startActivity(new Intent(getApplicationContext(), MyAccount.class));
-        } else if (id == R.id.nav_manage) {
-
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

@@ -90,7 +90,7 @@ public class DetailedListView extends YouTubeBaseActivity implements YouTubePlay
         youTubePlayer.setPlayerStateChangeListener(playerStateChangeListener);
         youTubePlayer.setPlaybackEventListener(playbackEventListener);
         if (!wasRestored) {
-            youTubePlayer.cueVideo("Wy0-rZiw700"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
+            youTubePlayer.cueVideo("4uu-mKoFR6w"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
         }
     }
 

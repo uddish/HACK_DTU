@@ -21,9 +21,9 @@ public class Certificate extends AppCompatActivity {
 
         display = getWindowManager().getDefaultDisplay();
 
-        layoutParams.height = (int) (display.getHeight()*0.55);
-        layoutParams.width = display.getWidth();
-        certi.setLayoutParams(layoutParams);
-        certi.setImageResource(R.drawable.certi);
+//        layoutParams.height = (int) (display.getHeight()*0.55);
+//        layoutParams.width = display.getWidth();
+//        certi.setLayoutParams(layoutParams);
+//        certi.setImageResource(R.drawable.certi);
     }
 }
