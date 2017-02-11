@@ -30,10 +30,6 @@ public class RegisterMedicalID extends AppCompatActivity {
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-//        Medical_POJO.MedicalDetails details = new Medical_POJO.MedicalDetails("uddish","uddish","uddish","uddish","uddish","uddish","");
-
-//        mDatabase.child("medical_id").setValue(details);
-
         name = (EditText) findViewById(R.id.name_et);
         age = (EditText) findViewById(R.id.age_et);
         phone = (EditText) findViewById(R.id.contactNumber_et);

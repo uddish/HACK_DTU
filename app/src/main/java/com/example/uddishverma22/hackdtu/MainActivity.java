@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity
         fund.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), DetailedListView.class));
+                startActivity(new Intent(getApplicationContext(), Main2Activity.class));
             }
         });
 

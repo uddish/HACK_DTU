@@ -3,8 +3,10 @@ package com.example.uddishverma22.hackdtu;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -17,10 +19,20 @@ public class DetailedListView extends YouTubeBaseActivity implements YouTubePlay
     private static final int RECOVERY_REQUEST = 1;
     private YouTubePlayerView youTubeView;
 
+    public static final String TAG = "DetailedListView";
+
     private MyPlayerStateChangeListener playerStateChangeListener;
     private MyPlaybackEventListener playbackEventListener;
 
     Button btnContribute;
+
+    Intent i;
+
+    TextView name, dis, trmoney, mnleft;
+
+    String flag;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +44,35 @@ public class DetailedListView extends YouTubeBaseActivity implements YouTubePlay
 
         playerStateChangeListener = new MyPlayerStateChangeListener();
         playbackEventListener = new MyPlaybackEventListener();
+
+        name = (TextView) findViewById(R.id.person_name);
+        dis = (TextView) findViewById(R.id.disease_name);
+        trmoney = (TextView) findViewById(R.id.treatment_money);
+        mnleft = (TextView) findViewById(R.id.money_left);
+
+        i = getIntent();
+
+        if(i.getExtras().getString("flag").equals("one"))  {
+            Log.d(TAG, "onCreate: ONEEEEE");
+            name.setText("Tejveer Kaur");
+            dis.setText("Brain Trauma");
+            trmoney.setText("12,00,000");
+            mnleft.setText("9,00,000");
+        }
+        if(i.getExtras().get("flag").equals("two"))  {
+            name.setText("Sitaram");
+            dis.setText("Cancer");
+            trmoney.setText("9,00,000");
+            mnleft.setText("3,15,000");
+        }
+        if(i.getExtras().get("flag").equals("three"))  {
+            name.setText("Ramesh");
+            dis.setText("Paralysis");
+            trmoney.setText("9,00,000");
+            mnleft.setText("3,15,000");
+        }
+
+
 
         btnContribute = (Button) findViewById(R.id.btn_contribute);
 
@@ -73,13 +114,13 @@ public class DetailedListView extends YouTubeBaseActivity implements YouTubePlay
         @Override
         public void onPlaying() {
             // Called when playback starts, either due to user action or call to play().
-            showMessage("Playing");
+//            showMessage("Playing");
         }
 
         @Override
         public void onPaused() {
             // Called when playback is paused, either due to user action or call to pause().
-            showMessage("Paused");
+//            showMessage("Paused");
         }
 
         @Override

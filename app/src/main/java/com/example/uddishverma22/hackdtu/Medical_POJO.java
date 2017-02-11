@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 
 public class Medical_POJO {
 
-    public static class MedicalDetails extends RecyclerView.ViewHolder {
+    public static class MedicalDetails{
         String name;
         String age;
         String bloodGroup;
