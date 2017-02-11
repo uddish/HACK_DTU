@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "28347157477",
+    "firebase_url": "https://hackdtu-158321.firebaseio.com",
+    "project_id": "hackdtu-158321",
+    "storage_bucket": "hackdtu-158321.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28347157477:android:4d167579a17d1b18",
+        "android_client_info": {
+          "package_name": "com.example.uddishverma22.hackdtu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28347157477-2jo4e98b8e8tc97jjm7c933btl6k4ls8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE-2ZsHiGFgQ0yhXYdInUSZUVquxao03M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
