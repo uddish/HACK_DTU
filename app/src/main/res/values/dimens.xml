@@ -6,4 +6,18 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+
+
+
+    <dimen name="grid_1_half">4dp</dimen>
+    <dimen name="grid_1">8dp</dimen>
+    <dimen name="grid_3_half">12dp</dimen>
+    <dimen name="grid_2">16dp</dimen>
+    <dimen name="grid_5_half">20dp</dimen>
+    <dimen name="grid_3">24dp</dimen>
+    <dimen name="grid_7_half">28dp</dimen>
+    <dimen name="grid_4">25dp</dimen>
+    <dimen name="grid_9_half">36dp</dimen>
+    <dimen name="grid_5">40dp</dimen>
 </resources>
