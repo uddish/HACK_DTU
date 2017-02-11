@@ -1,7 +1,10 @@
 package com.example.uddishverma22.hackdtu;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -17,6 +20,8 @@ public class DetailedListView extends YouTubeBaseActivity implements YouTubePlay
     private MyPlayerStateChangeListener playerStateChangeListener;
     private MyPlaybackEventListener playbackEventListener;
 
+    Button btnContribute;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +32,16 @@ public class DetailedListView extends YouTubeBaseActivity implements YouTubePlay
 
         playerStateChangeListener = new MyPlayerStateChangeListener();
         playbackEventListener = new MyPlaybackEventListener();
+
+        btnContribute = (Button) findViewById(R.id.btn_contribute);
+
+        btnContribute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), PaymentActivity.class));
+            }
+        });
+
     }
 
     @Override
