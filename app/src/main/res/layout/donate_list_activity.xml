@@ -29,7 +29,7 @@
                     android:id="@+id/pg_image"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:scaleType="centerInside"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/indian" />
 
             </LinearLayout>
@@ -84,67 +84,6 @@
                     android:textColor="@android:color/black"/>
                 </LinearLayout>
             </LinearLayout>
-
-            <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:orientation="vertical">-->
-
-                <!--<LinearLayout-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:orientation="vertical">-->
-                        <!--<TextView-->
-                            <!---->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:fontFamily="sans-serif"-->
-                            <!--android:textSize="12sp"-->
-                            <!--android:text="Donation Required"-->
-                            <!--android:textColor="@android:color/black"-->
-                        <!--/>-->
-                        <!--<TextView-->
-                            <!--android:id="@+id/tv_donation_required"-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:fontFamily="sans-serif"-->
-                            <!--android:textSize="10sp"-->
-                            <!--android:text="Rupees"-->
-                            <!--android:textColor="@android:color/black"-->
-                        <!--/>-->
-                <!--</LinearLayout>-->
-
-                <!--<LinearLayout-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="50"-->
-                    <!--android:orientation="vertical"-->
-                    <!--&gt;-->
-
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="match_parent"-->
-                    <!--android:layout_marginLeft="70dp"-->
-                    <!--android:fontFamily="sans-serif"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:text="Donation Required"-->
-                    <!--android:textColor="@android:color/black"-->
-                    <!--/>-->
-
-                    <!--<TextView-->
-                        <!--android:id="@+id/tv_donation_remain"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:fontFamily="sans-serif"-->
-                        <!--android:textSize="10sp"-->
-                        <!--android:text="Rupees"-->
-                        <!--android:layout_marginLeft="80dp"-->
-                        <!--android:textColor="@android:color/black"-->
-                        <!--/>-->
-
-                <!--</LinearLayout>-->
-            <!--</LinearLayout>-->
 
 
             <LinearLayout
