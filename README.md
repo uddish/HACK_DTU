@@ -1,4 +1,4 @@
-Gather Android App (Hack DTU Hackathon)
+Gather Android App (Hack DTU Hackathon).
 
 Project description - Developed an android app named Gather: A patient-centered app containing 2 modules aims to help the poor and the needy people.
 
